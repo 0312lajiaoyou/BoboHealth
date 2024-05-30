@@ -57,12 +57,11 @@
         android:text="登录"
         android:textColor="#E8E8E8"
         android:textSize="19dp"
+        android:onClick="login"
         android:background="@drawable/my_button_selector"
         android:layout_gravity="center"/>
 
-
     <TextView
-        android:id="@+id/click"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="monospace"
@@ -70,7 +69,19 @@
         android:text="没有账号？点击注册"
         android:layout_marginEnd="10dp"
         android:layout_marginTop="10dp"
-        android:onClick="Register"
+        android:onClick="register"
+        android:textColor="#696969"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:gravity="right"
+        android:text="若数据库出问题则点此进入首页"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="150dp"
+        android:onClick="prob"
         android:textColor="#696969"
         android:textSize="18sp" />
 

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8BFD8"
+    android:orientation="vertical"
+    tools:context=".HomepageActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mypurple"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:padding="15sp"
+        android:text="啵啵健康"
+        android:textColor="#CFCFCF"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:onClick="calorie"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="20dp"
+            app:srcCompat="@drawable/bobo" />
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:onClick="weight"
+            app:srcCompat="@drawable/bobo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/button3"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:onClick="diet"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="20dp"
+            app:srcCompat="@drawable/bobo" />
+
+        <ImageButton
+            android:id="@+id/button4"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:onClick="game"
+            app:srcCompat="@drawable/bobo" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#696969" />
+
+    <TextView
+        android:id="@+id/out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:padding="15sp"
+        android:text="BMI计算器"
+        android:textColor="#696969"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="    请输入身高(单位：m)"
+        android:inputType="text"
+        android:textColor="#696969"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="    请输入体重(单位：kg)"
+        android:inputType="text"
+        android:textColor="#696969"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="Click"
+        android:text="计算"
+        android:textColor="#E8E8E8"
+        android:textSize="19dp"
+        android:background="@drawable/my_button_selector"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:gravity="right"
+        android:text="退出登录"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="login"
+        android:textColor="#696969"
+        android:textSize="18sp" />
+
+</LinearLayout>

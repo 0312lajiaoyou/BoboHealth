@@ -66,9 +66,21 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="注册"
+        android:onClick="register"
         android:textColor="#E8E8E8"
         android:textSize="19dp"
         android:background="@drawable/my_button_selector"
         android:layout_gravity="center"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:gravity="right"
+        android:text="已有账号？去登录！"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="login"
+        android:textColor="#696969"
+        android:textSize="18sp" />
 </LinearLayout>
