@@ -23,48 +23,52 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="18dp"
         android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/button1"
             android:layout_width="180dp"
-            android:layout_height="120dp"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
             android:onClick="calorie"
             android:layout_gravity="center"
             android:layout_marginLeft="12dp"
-            android:layout_marginRight="20dp"
-            app:srcCompat="@drawable/bobo" />
+            android:layout_marginRight="18dp"
+            app:srcCompat="@drawable/calorie" />
 
         <ImageButton
             android:id="@+id/button2"
             android:layout_width="180dp"
-            android:layout_height="120dp"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
             android:onClick="weight"
-            app:srcCompat="@drawable/bobo" />
+            app:srcCompat="@drawable/weight" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/button3"
             android:layout_width="180dp"
-            android:layout_height="120dp"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
             android:onClick="diet"
             android:layout_marginLeft="12dp"
-            android:layout_marginRight="20dp"
-            app:srcCompat="@drawable/bobo" />
+            android:layout_marginRight="18dp"
+            app:srcCompat="@drawable/diet" />
 
         <ImageButton
             android:id="@+id/button4"
             android:layout_width="180dp"
-            android:layout_height="120dp"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
             android:onClick="game"
-            app:srcCompat="@drawable/bobo" />
+            app:srcCompat="@drawable/game" />
     </LinearLayout>
 
     <View
@@ -118,17 +122,4 @@
         android:textSize="19dp"
         android:background="@drawable/my_button_selector"
         android:layout_gravity="center"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="monospace"
-        android:gravity="right"
-        android:text="退出登录"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="10dp"
-        android:onClick="login"
-        android:textColor="#696969"
-        android:textSize="18sp" />
-
 </LinearLayout>

@@ -40,11 +40,6 @@ public class HomepageActivity extends AppCompatActivity {
         Intent intent = new Intent(this,GameActivity.class);
         startActivity(intent);
     }
-    public void login(View view) {
-        //open activity
-        Intent intent = new Intent(this,LoginActivity.class);
-        startActivity(intent);
-    }
     public void Click(View view) {
         String msg = "Click:111111111";
         Log.i(Tag,msg);

@@ -21,6 +21,7 @@ public class WeightActivity extends AppCompatActivity {
         //接收传入数据
         Intent intent = getIntent();
         float weight1 = intent.getFloatExtra("weight_key", 0);
+        String date1=intent.getStringExtra("date_key");
         Log.i(TAG,"onCreate: get weight2="+weight1);
 
         TextView myout=findViewById(R.id.out);

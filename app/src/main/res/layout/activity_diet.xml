@@ -36,5 +36,20 @@
             android:textColor="#CFCFCF"
             android:textSize="24sp" />
     </LinearLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mypurple"
+        android:layout_marginTop="0.5dp"
+        app:tabMode="fixed"
+        app:tabTextColor="#8B8682"
+        app:tabSelectedTextColor="#CFCFCF"
+        app:tabTextAppearance="@style/MyTabLayout"
+        />
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

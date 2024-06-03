@@ -1,16 +1,16 @@
 package com.example.bobohealth;
 
-public class CalorieItem
+public class WeightItem
 {
     private int id;
     private String foodname;
     private String foodca;
-    public CalorieItem(String 测试卡路里, float v){
+    public WeightItem(String 测试卡路里, float v){
         super();
         foodname="";
         foodca="";
     }
-    public CalorieItem(String curName,String curRate){
+    public WeightItem(String curName, String curRate){
         super();
         this.foodname=foodname;
         this.foodca=foodca;

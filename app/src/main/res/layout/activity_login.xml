@@ -25,64 +25,19 @@
         android:layout_width="280dp"
         android:layout_height="280dp"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
         app:srcCompat="@drawable/bobo" />
-
-    <EditText
-        android:id="@+id/Name"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:inputType="text"
-        android:hint="    请输入用户名"
-        android:textColor="#696969" />
-
-    <EditText
-        android:id="@+id/Password"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:ems="10"
-        android:inputType="text"
-        android:hint="    请输入密码"
-        android:textColor="#696969" />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="登录"
+        android:layout_marginTop="70dp"
+        android:text="进入首页"
         android:textColor="#E8E8E8"
-        android:textSize="19dp"
+        android:textSize="20dp"
         android:onClick="login"
         android:background="@drawable/my_button_selector"
         android:layout_gravity="center"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="monospace"
-        android:gravity="right"
-        android:text="没有账号？点击注册"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="10dp"
-        android:onClick="register"
-        android:textColor="#696969"
-        android:textSize="18sp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="monospace"
-        android:gravity="right"
-        android:text="若数据库出问题则点此进入首页"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="150dp"
-        android:onClick="prob"
-        android:textColor="#696969"
-        android:textSize="18sp" />
 
 </LinearLayout>

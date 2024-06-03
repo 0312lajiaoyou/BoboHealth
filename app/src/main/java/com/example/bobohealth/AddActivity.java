@@ -25,13 +25,16 @@ public class AddActivity extends AppCompatActivity {
         Intent intent1 = new Intent(this, WeightActivity.class);
 
         EditText weightInput = findViewById(R.id.weight);
-        if (weightInput.length()==0){
+        EditText dateInput = findViewById(R.id.date);
+        if (weightInput.length()==0||dateInput.length()==0){
             //提示消息
             Toast.makeText(this, "请输入正确的数据", Toast.LENGTH_SHORT).show();
         }else {
-            Float weight2 = Float.valueOf(weightInput.getText().toString());
+            Float weight = Float.valueOf(weightInput.getText().toString());
+            String date = dateInput.getText().toString();
             //传递参数
-            intent1.putExtra("weight_key",weight2);
+            intent1.putExtra("weight_key",weight);
+            intent1.putExtra("date_key",date);
 
             startActivity(intent1);
         }

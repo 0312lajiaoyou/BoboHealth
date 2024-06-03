@@ -1,7 +1,9 @@
 package com.example.bobohealth;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -33,7 +35,6 @@ public class RegisterActivity extends AppCompatActivity {
             Float name = Float.valueOf(nameInput.getText().toString());
             Float pwd = Float.valueOf(pwdInput.getText().toString());
             Float cpwd = Float.valueOf(cpwdInput.getText().toString());
-            startActivity(intent1);
         }
     }
     public void login(View view) {

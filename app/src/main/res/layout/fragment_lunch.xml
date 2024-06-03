@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8BFD8"
+    android:orientation="vertical"
+    tools:context=".LunchFragment">
+
+    <TextView
+        android:id="@+id/out"
+        android:layout_width="250dp"
+        android:layout_height="115dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="135dp"
+        android:background="@color/mypurple"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:padding="15sp"
+        android:text="午餐摄入"
+        android:textColor="#CFCFCF"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/food"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="    请输入食品"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#696969"
+        android:textSize="24sp" />
+    <EditText
+        android:id="@+id/calorie"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="    请输入热量（单位：kcal）"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#696969"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="add"
+        android:text="添加"
+        android:textColor="#E8E8E8"
+        android:textSize="19dp"
+        android:background="@drawable/my_button_selector"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
