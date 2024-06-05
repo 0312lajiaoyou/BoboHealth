@@ -2,16 +2,16 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
-      <entry key="CalorieActivity">
+      <entry key="AddActivity">
         <State />
       </entry>
       <entry key="DietActivity">
         <State />
       </entry>
-      <entry key="LoginActivity">
+      <entry key="HomepageActivity">
         <State />
       </entry>
-      <entry key="RegisterActivity">
+      <entry key="LoginActivity">
         <State />
       </entry>
       <entry key="WeightActivity">

@@ -61,11 +61,18 @@
         android:textSize="34sp" />
 
     <ListView
-        android:id="@android:id/list"
+        android:id="@+id/weightlist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:divider="@android:color/darker_gray"
         android:dividerHeight="1dp" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nodata"
+        android:text="没有记录"
+        android:textSize="24sp"
+        android:gravity="center"/>
 
 </LinearLayout>

@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:hint="    请输入时间(具体到日)"
+        android:hint="    请输入时间(xxxx.xx.xx)"
         android:ems="10"
         android:inputType="text"
         android:textColor="#696969"

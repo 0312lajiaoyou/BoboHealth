@@ -24,7 +24,7 @@
             android:padding="15sp"
             android:text="返回"
             android:textColor="#CFCFCF"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/textView"
@@ -34,19 +34,19 @@
             android:padding="15sp"
             android:text="敲个木鱼冥想一下吧！"
             android:textColor="#CFCFCF"
-            android:textSize="24sp" />
+            android:textSize="20sp" />
     </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="monospace"
         android:gravity="center"
         android:text="功德加"
         android:textColor="#696969"
-        android:textSize="30sp" />
+        android:textSize="28sp" />
 
     <TextView
         android:id="@+id/out1"
@@ -56,7 +56,7 @@
         android:fontFamily="monospace"
         android:text="0"
         android:textColor="#696969"
-        android:textSize="50sp" />
+        android:textSize="45sp" />
 
     <ImageButton
         android:id="@+id/button1"

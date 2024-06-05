@@ -9,7 +9,7 @@
     tools:context=".GameActivity">
 
     <TextView
-        android:id="@+id/weight"
+        android:id="@+id/itemTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="monospace"
@@ -18,11 +18,11 @@
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/date"
+        android:id="@+id/itemDetail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="monospace"
-        android:gravity="end"
+        android:layout_marginLeft="18dp"
         android:textColor="#696969"
-        android:textSize="15sp" />
+        android:textSize="18sp" />
 </LinearLayout>

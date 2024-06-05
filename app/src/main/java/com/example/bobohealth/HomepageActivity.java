@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class HomepageActivity extends AppCompatActivity {
     private static final String Tag="homepageactivity";
@@ -45,20 +46,24 @@ public class HomepageActivity extends AppCompatActivity {
         Log.i(Tag,msg);
         EditText input1=findViewById(R.id.input1);
         EditText input2=findViewById(R.id.input2);
-        float height=Float.parseFloat(input1.getText().toString());
-        float weight=Float.parseFloat(input2.getText().toString());
-        float x1=height*height;
-        float bmi=weight/x1;
+        if (input1.length()==0||input2.length()==0){
+            Toast.makeText(this, "请输入身高体重", Toast.LENGTH_SHORT).show();
+        }else {
+            float height=Float.parseFloat(input1.getText().toString());
+            float weight=Float.parseFloat(input2.getText().toString());
+            float x1=height*height;
+            float bmi=weight/x1;
 
-        TextView myout=findViewById(R.id.out);
-        String result;
-        if(bmi<18){
-            result="\n您偏瘦了";
-        }else if(bmi<24){
-            result="\n您bmi正常";
-        }else{
-            result="\n您偏胖了";
+            TextView myout=findViewById(R.id.out);
+            String result;
+            if(bmi<18){
+                result="\n您偏瘦了";
+            }else if(bmi<24){
+                result="\n您bmi正常";
+            }else{
+                result="\n您偏胖了";
+            }
+            myout.setText(String.format("您的BMI为：%.2f "+result, bmi));
         }
-        myout.setText(String.format("您的BMI为：%.2f "+result, bmi));
     }
 }

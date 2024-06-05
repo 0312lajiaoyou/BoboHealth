@@ -32,6 +32,11 @@ public class AddActivity extends AppCompatActivity {
         }else {
             Float weight = Float.valueOf(weightInput.getText().toString());
             String date = dateInput.getText().toString();
+            //向数据库中写入数据
+            WeightManager manager = new WeightManager(AddActivity.this);
+            WeightItem item = new WeightItem(weight, date);
+            manager.add(item);
+            Toast.makeText(AddActivity.this, "数据写入完毕", Toast.LENGTH_SHORT).show();
             //传递参数
             intent1.putExtra("weight_key",weight);
             intent1.putExtra("date_key",date);

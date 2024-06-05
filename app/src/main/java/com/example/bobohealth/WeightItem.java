@@ -3,17 +3,12 @@ package com.example.bobohealth;
 public class WeightItem
 {
     private int id;
-    private String foodname;
-    private String foodca;
-    public WeightItem(String 测试卡路里, float v){
+    private Float weight;
+    private String date;
+    public WeightItem(Float weight, String date){
         super();
-        foodname="";
-        foodca="";
-    }
-    public WeightItem(String curName, String curRate){
-        super();
-        this.foodname=foodname;
-        this.foodca=foodca;
+        this.weight=weight;
+        this.date=date;
     }
     public int getId(){
         return id;
@@ -21,16 +16,16 @@ public class WeightItem
     public void setId(int id) {
         this.id = id;
     }
-    public String getfoodname(){
-        return foodname;
+    public Float getweight(){
+        return weight;
     }
-    public void setfoodname(String foodname) {
-        this.foodname = foodname;
+    public void setweight(Float weight) {
+        this.weight = weight;
     }
-    public String getfoodca(){
-        return foodca;
+    public String getdate(){
+        return date;
     }
-    public void setfoodca(String foodca) {
-        this.foodca = foodca;
+    public void setdate(String date) {
+        this.date = date;
     }
 }

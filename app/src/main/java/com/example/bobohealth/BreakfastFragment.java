@@ -1,5 +1,7 @@
 package com.example.bobohealth;
 
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -13,11 +15,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BreakfastFragment extends Fragment {
     float totalCalories = 0;  // 用于保存总卡路里
     EditText calorieInput;
     TextView output;
-
     Button addButton;
 
     @Override
