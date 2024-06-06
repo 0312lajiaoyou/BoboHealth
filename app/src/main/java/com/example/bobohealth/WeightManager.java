@@ -27,10 +27,4 @@ public class WeightManager {
         db.insert(TBNAME1, null, values);
         db.close();
     }
-
-    public void delete(int id){
-        SQLiteDatabase db = dbHelper.getWritableDatabase();
-        db.delete(TBNAME1,"ID=?",new String[]{String.valueOf(id)});
-        db.close();
-    }
 }
