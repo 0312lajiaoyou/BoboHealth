@@ -5,13 +5,13 @@
       <entry key="AddActivity">
         <State />
       </entry>
+      <entry key="CalorieActivity">
+        <State />
+      </entry>
       <entry key="DietActivity">
         <State />
       </entry>
       <entry key="HomepageActivity">
-        <State />
-      </entry>
-      <entry key="LoginActivity">
         <State />
       </entry>
       <entry key="WeightActivity">

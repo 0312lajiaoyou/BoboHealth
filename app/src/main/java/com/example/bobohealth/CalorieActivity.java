@@ -27,7 +27,6 @@ public class CalorieActivity extends ListActivity {
     private ArrayList<HashMap<String,String>> listItems;
     private SimpleAdapter listItemAdapter;
     Handler handler;
-    String text;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,27 +51,18 @@ public class CalorieActivity extends ListActivity {
         //定义一个线程获取数据
         Thread t = new Thread(() -> {
             ArrayList<HashMap<String,String>> list= new ArrayList<HashMap<String,String>>();
-            int id=0;
             try {
-                Document doc = Jsoup.connect("https://www.huilvzaixian.com").get();
-                Elements tables = doc.getElementsByTag("ul");
-                for (Element ulElement : tables) {
-                    Elements liElements = ulElement.select("li");
-                    for(Element liElement : liElements){
-                        if(id!=0) break;
-                        text=liElement.text();
-                        id=1;
-                    }
-                }
-                String[] message = text.split("\\s");
-                for(int i=0;i+2<message.length;i+=3){
-                    String name = message[i+1];
-                    String calorie = message[i+2];
+                Document doc = Jsoup.connect("https://www.boohee.com/food/group/1").get();
+                Elements tables = doc.select("ul.food-list > li.item");
+                // 遍历所有食物项
+                for (Element item : tables) {
+                    String name = item.select("h4 a").text();
+                    String calorie = item.select("p").text();
                     Log.i(TAG, "run:" + name + "==>" + calorie);
-                    HashMap<String,String> map = new HashMap<String,String>();
-                    map.put("itemTitle",name);
-                    map.put("itemDetail",calorie);
-                    list.add(map);
+                    HashMap<String, String> food = new HashMap<>();
+                    food.put("itemTitle", name);
+                    food.put("itemDetail", calorie);
+                    list.add(food);
                 }
             } catch(MalformedURLException e) {
                 e.printStackTrace();
